@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 import java.util.Date;
 import javax.servlet.annotation.WebServlet;
 
-@WebServlet("/Halo")
+@WebServlet("/halo")
 public class HaloServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse res)
 			throws IOException, ServletException {
