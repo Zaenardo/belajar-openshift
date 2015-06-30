@@ -44,7 +44,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Halo OpenShift</a>
+                <a class="navbar-brand" href="${request.contextPath}/#page-top">Halo OpenShift</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,13 +54,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="${request.contextPath}/#portfolio">Portfolio</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="${request.contextPath}/#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                        <a href="${request.contextPath}/#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -74,7 +74,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <img class="img-responsive" src="${request.contextPath}/img/profile.png" alt="">
                     <div class="intro-text">
                         <span class="name">Aplikasi ToDo</span>
                         <hr class="star-light">

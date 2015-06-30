@@ -18,7 +18,7 @@ public class Todo{
 		
 	}
 	public void setKeterangan(String keterangan){
-		this.id = id;
+		this.keterangan = keterangan;
 	
 	}
 	
