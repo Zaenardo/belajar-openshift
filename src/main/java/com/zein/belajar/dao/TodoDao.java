@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.util.List;
 import java.util.ArrayList;
-import com.muhardin.endy.belajar.Todo;
+import com.zein.belajar.dao;
 
 public class TodoDao {
     private static final String OPENSHIFT_DB_HOST = "OPENSHIFT_MYSQL_DB_HOST";
