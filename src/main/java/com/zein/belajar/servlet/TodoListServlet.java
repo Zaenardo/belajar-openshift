@@ -37,7 +37,7 @@ public class TodoListServlet extends HttpServlet {
 				daftarTodo.add(t3);
 				
 				//masukan data ke request attribute
-				req.setAttribute("todo" daftarTodo);
+				req.setAttribute("todo", daftarTodo);
 				
 				
 				
