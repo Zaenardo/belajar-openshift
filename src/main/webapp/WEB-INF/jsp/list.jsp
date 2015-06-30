@@ -39,29 +39,29 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="${request.contextPath}/#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Halo OpenShift</a>
+                <a class="navbar-brand" href="${request.contextPath}/#page-top">Halo OpenShift</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="${request.contextPath}/#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="${request.contextPath}/#portfolio">Portfolio</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="${request.contextPath}/#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                        <a href="${request.contextPath}/#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -75,7 +75,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <img class="img-responsive" src="${request.contextPath}/img/profile.png" alt="">
                     <div class="intro-text">
                         <span class="name">Aplikasi ToDo</span>
                         <hr class="star-light">
@@ -158,7 +158,7 @@
                 </div>
             </div> -->
 			
-			<table>
+			<table class="table table-striped table-hover table-condensed table-bordered">
 			<thead>
 				<tr>
 					<th>&nbsp; </th>
