@@ -54,13 +54,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="${request.contextPath}/#portfolio">Portfolio</a>
+                        <a href="${request.contextPath}/portfolio">Portfolio</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="${request.contextPath}/#about">About</a>
+                        <a href="${request.contextPath}/about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="${request.contextPath}/#contact">Contact</a>
+                        <a href="${request.contextPath}/contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -157,7 +157,7 @@
                 </div>
             </div> -->
 			
-			<table>
+			<table class="table table-striped table-hover table-condensed table-bordered">
 			<thead>
 				<tr>
 					<th>&nbsp; </th>
