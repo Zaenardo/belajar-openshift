@@ -1,4 +1,4 @@
-/*package com.zein.belajar.servlet;
+package com.zein.belajar.servlet;
 
 public class Todo{
 	private Integer id;
@@ -9,7 +9,7 @@ public class Todo{
 		return id;
 	
 	}
-	public void setId (integer id){
+	public void setId(Integer id){
 		this.id = id;
 	}
 	
@@ -22,12 +22,11 @@ public class Todo{
 	
 	}
 	
-	public Boolean get Selesai (){
+	public Boolean getSelesai(){
 		return selesai;
 		
 	}
 	public void setSelesai(Boolean selesai){
-		this.selesai =selesai;
+		this.selesai = selesai;
 	}
 }
-*/
