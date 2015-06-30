@@ -74,11 +74,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="${request.contextPath}/img/profile.png" alt="">
+                    <img class="img-responsive" src="<?php echo base_url(); ?>img/profile.png" alt="">
                     <div class="intro-text">
                         <span class="name">Aplikasi ToDo</span>
                         <hr class="star-light">
-                        <span class="skills">Zein Muhammad Firdaus</span>
+                        <span class="skills">Zein Muhammad Firdausa</span>
                     </div>
                 </div>
             </div>
