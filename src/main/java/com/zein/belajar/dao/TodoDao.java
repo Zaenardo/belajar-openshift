@@ -1,0 +1,58 @@
+package com.zein.belajar.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.util.List;
+import java.util.ArrayList;
+import com.muhardin.endy.belajar.Todo;
+
+public class TodoDao {
+    private static final String OPENSHIFT_DB_HOST = "OPENSHIFT_MYSQL_DB_HOST";
+    private static final String OPENSHIFT_DB_PORT = "OPENSHIFT_MYSQL_DB_PORT";
+    private static final String OPENSHIFT_DB_NAME = "aplikasitodo";
+    private static final String OPENSHIFT_DB_USERNAME = "admingNuLMVc";
+    private static final String OPENSHIFT_DB_PASSWORD = "sKr5MpIISZeu";
+
+    private Connection koneksiDatabase;
+
+    private void connect() throws Exception {
+        String host = System.getenv(OPENSHIFT_DB_HOST);
+        String port = System.getenv(OPENSHIFT_DB_PORT);
+        String url = "jdbc:mysql://"+host+":"+port+"/"+OPENSHIFT_DB_NAME;
+        
+        Class.forName("com.mysql.jdbc.Driver");
+        koneksiDatabase = DriverManager.getConnection(url, OPENSHIFT_DB_USERNAME, OPENSHIFT_DB_PASSWORD);
+    }
+    
+    private void disconnect() throws Exception {
+        if(koneksiDatabase != null){
+            koneksiDatabase.close();
+        }
+    }
+    
+    public List<Todo> semuaTodo(){
+        List<Todo> hasil = new ArrayList<Todo>();
+            
+        try {
+            connect();
+            String sql = "select * from todo order by keterangan";
+            ResultSet rs = koneksiDatabase.createStatement().executeQuery(sql);
+            
+            while(rs.next()){
+                Todo t = new Todo();
+                t.setId(rs.getInt("id"));
+                t.setKeterangan(rs.getString("keterangan"));
+                t.setSelesai(rs.getBoolean("selesai"));
+                hasil.add(t);
+            }
+            
+            rs.close();
+            disconnect();
+        } catch (Exception err) {
+            err.printStackTrace();
+        }
+        
+        return hasil;
+    }
+}
