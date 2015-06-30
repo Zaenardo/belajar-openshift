@@ -163,22 +163,22 @@
 			
 			
         </div>
-		<table class="table table-striped table-hover table-condensed table-bordered">
-			<thead>
-				<tr>
-					<th>&nbsp; </th>
-					<th>Pekerjaan</th>
-				</tr>
-			</thead>
-			<tbody>
-				<c:forEach var="t" items="${todo}">
-				<tr>
-					<td>${t.selesai}</td>
-					<td>${t.keterangan}</td>
-				</tr>
-				</c:forEach>
-			</tbody>
-			</table>
+					  <table class="table table-striped table-hover table-condensed table-bordered">
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Pekerjaan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <c:forEach var="t" items="${todo}">
+                <tr>
+                    <td>${t.selesai}</td>
+                    <td>${t.keterangan}</td>
+                </tr>
+                </c:forEach>
+            </tbody>
+        </table>
     </section>
 
     <!-- About Section -->
