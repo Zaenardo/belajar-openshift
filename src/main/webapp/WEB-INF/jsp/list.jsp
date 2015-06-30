@@ -39,13 +39,13 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="${request.contextPath}/#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="${request.contextPath}#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="${request.contextPath}/#page-top">Halo OpenShift</a>
+                <a class="navbar-brand" href="${request.contextPath}/todo/list#page-top">Halo OpenShift</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -55,13 +55,13 @@
                         <a href="${request.contextPath}/#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="${request.contextPath}/#portfolio">Portfolio</a>
+                        <a href="${request.contextPath}/todo/list#portfolio">Daftar ToDo</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="${request.contextPath}/#about">About</a>
+                        <a href="${request.contextPath}/todo/list#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="${request.contextPath}/#contact">Contact</a>
+                        <a href="${request.contextPath}/todo/list#contact">Contact</a>
                     </li>
                 </ul>
             </div>
