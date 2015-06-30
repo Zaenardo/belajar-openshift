@@ -74,7 +74,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="<?php echo base_url(); ?>img/profile.png" alt="">
+                  <!--  <img class="img-responsive" src="img/profile.png" alt=""> -->
                     <div class="intro-text">
                         <span class="name">Aplikasi ToDo</span>
                         <hr class="star-light">
@@ -157,7 +157,13 @@
                 </div>
             </div> -->
 			
-			<table class="table table-striped table-hover table-condensed table-bordered">
+			
+			
+			
+			
+			
+        </div>
+		<table class="table table-striped table-hover table-condensed table-bordered">
 			<thead>
 				<tr>
 					<th>&nbsp; </th>
@@ -173,11 +179,6 @@
 				</c:forEach>
 			</tbody>
 			</table>
-			
-			
-			
-			
-        </div>
     </section>
 
     <!-- About Section -->
