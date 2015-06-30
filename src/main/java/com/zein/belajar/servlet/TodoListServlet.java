@@ -21,19 +21,19 @@ public class TodoListServlet extends HttpServlet {
 				Todo t1= new Todo();
 				t1.setId(1);
 				t1.setKeterangan("Registrasi Openshift");
-				t1.seSelesai(true);
+				t1.setSelesai(true);
 				daftarTodo.add(t1);
 				
 				Todo t2= new Todo();
 				t2.setId(2);
 				t2.setKeterangan("Buat app baru");
-				t2.seSelesai(false);
+				t2.setSelesai(false);
 				daftarTodo.add(t2);
 				
 				Todo t3= new Todo();
 				t3.setId(3);
 				t3.setKeterangan("BDeploy Aplikasi");
-				t3.seSelesai(false);
+				t3.setSelesai(false);
 				daftarTodo.add(t3);
 				
 				//masukan data ke request attribute
