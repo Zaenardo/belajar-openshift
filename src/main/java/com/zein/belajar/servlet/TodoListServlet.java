@@ -4,10 +4,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.ServletException;
+import javax.servlet.RequestDispatcher;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
+import java.util.List;
+import java.util.ArrayList;
 import javax.servlet.annotation.WebServlet;
+
 
 @WebServlet("/todo/list")
 public class TodoListServlet extends HttpServlet {
@@ -42,7 +46,7 @@ public class TodoListServlet extends HttpServlet {
 				
 				
 				// redirect ke tampilan
-				String lokasiJsp = "/WEB-INF/jsp/list.jsp";
+				String lokasiJsp = "/WEB-INF/jsp/todo.jsp";
 				RequestDispatcher rd = req.getRequestDispatcher(lokasiJsp);
 				rd.forward(req,res);
 				
